@@ -1,0 +1,26 @@
+{
+  "name": "tdd-pre-js-express",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^18.8.3",
+    "ts-node": "^10.9.1",
+    "ts-sinon": "^2.0.2",
+    "typescript": "^4.8.4",
+    "@types/chai": "^4.3.3",
+    "@types/mocha": "^10.0.0",
+    "@types/sinon": "^10.0.13",
+    "chai": "^4.3.6",
+    "mocha": "^10.0.0",
+    "nyc": "^15.1.0",
+    "sinon": "^14.0.1"
+  },
+  "dependencies": {}
+}
