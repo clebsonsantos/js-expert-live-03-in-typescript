@@ -1,12 +1,13 @@
 import { v4 as uuid} from "uuid"
 
-type Params = {
+export type Params = {
   text: string
   when: Date
   status?: string
 }
 
 export class Todo {
+  public id: string
   public text: string
   public when: Date
   public status: string
