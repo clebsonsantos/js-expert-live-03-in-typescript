@@ -10,7 +10,7 @@ export class Todo {
   public text: string
   public when: Date
   public status: string
-  
+
   constructor(params: Params) {
     Object.assign(this, {
       id: uuid(),
@@ -19,6 +19,6 @@ export class Todo {
   }
 
   isValid() {
-    return !!this.text
+    return !!this.text && !isNaN(this.when.valueOf())
   }
 }
