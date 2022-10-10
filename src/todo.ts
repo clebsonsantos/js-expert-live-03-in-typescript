@@ -3,7 +3,7 @@ import { v4 as uuid} from "uuid"
 type Params = {
   text: string
   when: Date
-  status: string
+  status?: string
 }
 
 export class Todo {
@@ -12,5 +12,9 @@ export class Todo {
       id: uuid(),
       ...params
     })
+  }
+
+  isValid() {
+    return null
   }
 }
