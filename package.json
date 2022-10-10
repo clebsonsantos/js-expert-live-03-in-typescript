@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npx mocha -r ts-node/register --parallel --exit test/**",
+    "test:watch": "npx mocha -r ts-node/register -w test/**",
+    "test:cov": "npx nyc --reporters=html,text npm test"
   },
   "keywords": [],
   "author": "",
