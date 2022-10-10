@@ -25,6 +25,14 @@ describe("Todo", () => {
       expect(result).to.be.not.ok
     })
 
-    it("should have 'id', 'text', 'when' and 'status', properties after creating object")
+    it("should have 'id', 'text', 'when' and 'status', properties after creating object", () => {
+      const data = {
+        text: "hello word",
+        when: new Date("2022-12-01")
+      }
+      const todo = new Todo(data)
+      const result = todo.isValid()
+      expect(result).to.be.ok
+    })
   })
 })
