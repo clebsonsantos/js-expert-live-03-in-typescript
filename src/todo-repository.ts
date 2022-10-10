@@ -5,15 +5,15 @@ export class TodoRepository {
   public schedule: loki.Collection
 
   constructor() {
-    const db = new loki("todo", {})
+    const db = new loki("todo")
     this.schedule = db.addCollection("schedule")
   }
 
-  list() {
+  public list() {
     return this.schedule.find()
   }
 
-  create(data: Params) {
+  public create(data: Params) {
     return this.schedule.insertOne(data)
   }
 }
