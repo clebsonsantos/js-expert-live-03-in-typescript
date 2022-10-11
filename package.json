@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "npx mocha -r ts-node/register --parallel --exit test/**",
+    "test": "npx mocha -r ts-node/register --exit test/**",
     "test:watch": "npx mocha -r ts-node/register -w test/**",
     "test:cov": "npx nyc --reporters=html,text npm test"
   },

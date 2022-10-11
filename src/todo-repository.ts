@@ -13,7 +13,7 @@ export class TodoRepository {
     return this.schedule.find()
   }
 
-  public create(data: Params) {
+  public create(data: Params): boolean {
     return this.schedule.insertOne(data)
   }
 }

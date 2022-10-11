@@ -12,10 +12,13 @@
       "emitDecoratorMetadata": true,
       "experimentalDecorators": true,
       "esModuleInterop": true,
+      "preserveConstEnums": true,
       "sourceMap": true,
       "types": [
           "mocha",
           "node",
+          "chai",
+          "sinon"
       ],
   },
   "include": [
