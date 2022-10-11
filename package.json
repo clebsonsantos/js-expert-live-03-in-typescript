@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "engines": {
+    "node": "16.x"
+  },
   "scripts": {
     "test": "npx mocha -r ts-node/register --exit test/**",
     "test:watch": "npx mocha -r ts-node/register -w test/**",

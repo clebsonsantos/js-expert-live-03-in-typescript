@@ -94,6 +94,26 @@ describe("todoService", ()=> {
 
     })
 
-    it("should save todo item with peding status")
+    it("should save todo item with pending status", () => {
+      const properties = {
+        text: "Hello Pending",
+        when: new Date("2022-10-20")
+      }
+
+      const data = new Todo(properties)
+
+      const today = new Date("2022-10-12")
+      sandBox.useFakeTimers(today.getTime())
+      const todoCreate = sandBox.spy(todoService.todoRepository, "create")
+
+      todoService.create(data)
+
+      const expectedCallWith = {
+        ...data,
+        status: "pending"
+      }
+
+      expect(todoCreate.calledOnceWithExactly(expectedCallWith)).to.be.ok
+    })
   })
 })
