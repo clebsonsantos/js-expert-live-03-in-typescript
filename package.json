@@ -9,7 +9,7 @@
   "scripts": {
     "test": "npx mocha -r ts-node/register --exit test/**",
     "test:watch": "npx mocha -r ts-node/register -w test/**",
-    "test:cov": "npx nyc --reporter=html npm test"
+    "test:cov": "npx nyc --reporter html npm test"
   },
   "keywords": [],
   "author": "",
